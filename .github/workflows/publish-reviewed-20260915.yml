@@ -1,0 +1,12 @@
+name: Publish reviewed Aahana Physiotherapy redesign
+on:
+  push:
+    branches: [gh-pages]
+    paths: [.github/workflows/publish-reviewed-20260915.yml]
+permissions:
+  contents: write
+jobs:
+  publish:
+    uses: SharpSites-demo/sparta-gym-spa-ritik-demo/.github/workflows/publish-reviewed-html.yml@41cd0e039ca25ad2234ffc0978649d9e00875f09
+    with:
+      expected_sha256: 577e78beaecc6a1e8ad0d4adcce8ada3aeee73e854c99af28e208f75de6e2256
